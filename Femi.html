@@ -5,11 +5,14 @@
 
     <script src="https://kit.fontawesome.com/e3a5ee317f.js"></script>
     <title> Oluwafemi Fadahunsi's CV </title>
+    <script src="external.js">
+      
+  
+    </script>
 
     <style>
         body {
             background-color: lightblue;
-            background-image: url("hng.png");
             border-style: solid;
             border-color: coral;
 
@@ -31,7 +34,6 @@
 <style>
     body {
         background-color: lavenderblush;
-        background-image: url("hng.png");
         border-color: coral;
 
     }
@@ -75,6 +77,39 @@
         margin-left: 100px;
         margin-bottom: 50px;
     }
+
+    #name {
+        margin-bottom: 50px;
+    }
+
+    #email {
+        margin-bottom: 50px;
+    }
+
+    #title{
+        margin-bottom: 50px;
+   }
+
+    #message {
+        margin-bottom: 50px;
+    }
+    #submit {
+        margin-bottom: 50px;
+        background-color: green;
+        color: rosybrown;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-left: 400px;
+            }
+
+    #container {
+         border-radius: 5px;
+        background-color: black;
+        padding: 20px;
+    } 
+
 </style>
 
 
@@ -179,7 +214,25 @@
 
 
 
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" minlength="4" placeholder="Please enter your name.." required> <br>
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email..." required> <br>
 
+          <label for="title"> Title</label>
+          <input type="text" id="title" name="title" style="width: 700px;" placeholder= "Title..." > <br>
+
+          <label for="message"> Message </label>
+          <input type="text" id="message" name="message" style="height:300px; width:900px;" minlength="20" placeholder= "Write your message" required> <br>
+
+          <input type="submit" id="submit" value="Submit">
+        
+</form>
+</div>
 
 
 
